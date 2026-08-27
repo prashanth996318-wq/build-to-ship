@@ -1,0 +1,16 @@
+{
+  "name": "cropsage-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Utility scripts for CropSage — database migration runner and helpers.",
+  "type": "module",
+  "scripts": {
+    "migrate": "node run-migration.mjs",
+    "migrate:dry-run": "node run-migration.mjs --dry-run",
+    "migrate:verify": "node run-migration.mjs --verify-only"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0"
+  }
+}
